@@ -1,0 +1,31 @@
+aside {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    height: 146vh;
+    border-radius: .5em;
+}
+h1 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+aside hr {
+    margin: .5em;
+    margin-left: 0;
+    margin-bottom: 1em;
+    border: 1px solid white;
+    width: 100%;
+}
+button {
+    padding: .5em;
+    margin-bottom: .5em;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.682);
+    border-radius: .5em;
+    width: 100%;
+}
+button:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.552);
+}

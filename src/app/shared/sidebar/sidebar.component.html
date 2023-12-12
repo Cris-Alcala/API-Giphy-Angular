@@ -1,0 +1,5 @@
+<aside>
+    <h1>Giphy App</h1>
+    <hr>
+    <button *ngFor="let element of history" (click)="getData(element)">{{element.charAt(0).toLocaleUpperCase()+element.slice(1)}}</button>
+</aside>
