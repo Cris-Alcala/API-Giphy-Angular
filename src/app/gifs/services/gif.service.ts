@@ -8,7 +8,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 export class GifService {
 
   private endpoint:string = 'https://api.giphy.com/v1/gifs';
-  private apiKey:string='UMfMfaVmLUbmtIvyxKk1MafuBxlLa6bk';
+  private apiKey:string='Aquí Debería Ir La API Key';
   arrayGifs:GIF[] = [];
   history:string[] = [];
 
