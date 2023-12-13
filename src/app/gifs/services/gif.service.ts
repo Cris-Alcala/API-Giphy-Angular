@@ -12,7 +12,10 @@ export class GifService {
   arrayGifs:GIF[] = [];
   history:string[] = [];
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {
+    let arrayHistoryLocal=localStorage.getItem('History');
+    if(arrayHistoryLocal!==null) this.history=JSON.parse(arrayHistoryLocal||'[]');
+  }
 
   getData(search:string) {
     if(this.history.includes(search.toLocaleLowerCase())) {
@@ -27,6 +30,7 @@ export class GifService {
         this.history.unshift(search.toLocaleLowerCase());
       }
     }  
+    localStorage.setItem('History',JSON.stringify(this.history));
      if (search.length==0) console.log('Error Al Realizar la Búsqueda');
      else {
       const params = new HttpParams()
